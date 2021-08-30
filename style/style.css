@@ -1,0 +1,241 @@
+
+/* общие настройки */
+
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --mw:900px;
+    
+}
+
+body{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    max-width: var(--mw);
+    margin: auto;
+}
+/* header */
+.header {
+    background-color: #35496b;
+
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+}
+
+.header__logo {
+
+}
+.header__logo-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.header__avatar{
+    display: flex;
+    align-items: center;
+}
+.header__avatar-img {
+    width: 2rem;
+    height: auto;
+    background-color: rgb(255, 232, 23);
+    border-radius: 50%;
+}
+.header__right {
+    display: flex;
+    align-items: center;
+    width: 3.2rem;
+    justify-content: space-between;
+}
+
+.header__dot {
+    position: relative;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.header__dot:before, .header__dot:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    background-color: inherit;
+    border-radius: inherit;
+}
+  
+.header__dot:before {
+    top: -0.5rem;
+}
+
+
+.header__dot:after {
+    top: 0.5rem;
+}
+
+/* main */
+
+main{
+    background-color: #f7f7f7;
+}
+
+.content-block {
+    margin-top: 0.4rem;
+    background-color: white;
+    border: 1px solid #eaeaea;
+    border-radius: 0.4rem;
+    padding: 0.8rem 0.4rem;
+}
+
+.main__content {
+    display: flex;
+}
+
+.main__left-col {
+    width: 65%;
+}
+.main__left-col {
+
+}
+.person-head__name {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+.person-head__discription {
+    margin-bottom: 0.8rem;
+}
+.person-head__info {}
+.person-head__basic,
+.person-head__additional {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-row-gap: 0.5rem;
+
+}
+.info__title {
+    color: gray;
+}
+
+.basic__date-zodiac {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url('../images/ui/zodiac.jpg') no-repeat;
+    background-position: 0px 0px;
+}
+
+.person-head__open-additional {
+    color: blue;
+    margin: 0.8rem 0;
+    cursor: pointer;
+}
+.person-head__additional {
+
+}
+.main__right-col {
+    width: 35%;
+    margin-left: 0.4rem;
+}
+.main__person-avatar {
+    width: 100%;
+    height: auto;
+}
+/* .main__person-avatar:hover{
+
+} */
+/*галерея*/
+
+.main__mini-gallery {
+    display: flex;
+    justify-content: space-between;
+}
+.mini-gallery__item{
+    display: flex;
+    position: relative;
+}
+.mini-gallery__photo {
+    width: 8rem;
+    height: 8rem;
+    background-color: rgba(245, 170, 170, 0.568);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.mini-gallery__photo:hover{
+    transition: linear 500ms;
+    border-radius: 0;
+}
+.ui_button_close{
+    background-image: url('../images/ui/interface.png');
+    width: 1.5rem;
+    height: 1.5rem;
+    background-position: -269px -168px;
+    background-color: rgba(117, 117, 117, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    transition: 1s;
+}
+
+/*медиа*/
+.main__profile-media {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0.3rem;
+    grid-row-gap: 0.3rem;
+
+}
+.media__item{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+}
+
+.media__icon{
+    width: 3rem;
+    height: 3rem;
+    background: url('../images/ui/icon.png') no-repeat;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+.media__item:nth-child(1)>.media__icon{
+    background-position: 8px 6px;
+}
+.media__item:nth-child(2)>.media__icon{
+    background-position: -31px 4px;
+}
+.media__item:nth-child(3)>.media__icon{
+    background-position: -74px 3px;
+}
+.media__item:nth-child(4)>.media__icon{
+    background-position: 8px -37px;
+}
+.media__item:nth-child(5)>.media__icon{
+    background-position: -33px -37px;
+}
+.media__item:nth-child(6)>.media__icon{
+    background-position: -73px -37px;
+}
+
+.media__title{
+    font-size: 0.8rem;
+    color: #5e6b8d;
+    text-align: center;
+}
